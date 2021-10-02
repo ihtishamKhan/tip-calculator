@@ -166,10 +166,11 @@ body {
 }
 
 .app-title {
-    padding: 40px;
+    padding: 60px;
     text-align: center;
     font-weight: 700;
     font-size: 24px;
+    color: hsl(185, 39%, 32%);
 }
 
 .bill-container {
@@ -180,11 +181,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .input-group {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 label,
@@ -203,35 +204,70 @@ input {
     border: none;
     outline: none;
     background-color: hsl(185, 41%, 84%);
-    height: 40px;
+    height: 48px;
     font-family: 'Space Mono', monospace;
     font-weight: 800;
     color: hsl(183, 100%, 15%);
-    font-size: 24px;
+    font-size: 26px;
     border-radius: 4px;
     padding: 14px;
+    text-align: right;
+    padding-left: 30px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsla(183, 100%, 15%, 0.321);
+    opacity: 1;
+    /* Firefox */
+}
+
+#bill {
+    background-image: url("/images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 1rem;
+}
+
+#peolpe {
+    background-image: url("/images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 1rem;
 }
 
 .tip-button-group {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6px;
 }
 
-.tip-button {
+.tip-button:not(:last-child) {
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
     text-align: center;
     padding: 14px;
-    flex-basis: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
     font-weight: 800;
     font-size: 20px;
-    /* margin-right: 10px; */
 }
 
-.input-group {
-    margin-bottom: 14px;
+.tip-button:last-child {
+    color: hsl(183, 100%, 15%);
+    padding-left: 0;
+}
+
+.tip-button:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.tip-button:not(:last-child):hover {
+    color: hsl(183, 100%, 15%);
+    background-color: rgb(1, 202, 202);
+    cursor: pointer;
+}
+
+.tip-button:nth-child(odd) {
+    margin-right: 5px;
 }
 
 .result-card {
@@ -250,20 +286,56 @@ input {
     color: hsl(183, 100%, 15%);
     font-weight: 800;
     border-radius: 5px;
-    margin-top: 18px;
+    margin-top: 28px;
+}
+
+.reset-button:hover {
+    background-color: rgb(0, 185, 185);
+    cursor: pointer;
+}
+
+.amount-row {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount-info,
+.amount-bill {
+    display: inline-block;
+}
+
+.amount-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: hsl(0, 0%, 100%);
+}
+
+.amount-for {
+    font-size: 12px;
+    color: hsl(185, 41%, 84%);
+}
+
+.amount-bill {
+    float: right;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(1, 202, 202);
 }
 
 
 /* test colors */
 
-.reset-button {
-    /* background-color: hsl(183, 100%, 15%);
+
+/* .reset-button {
+    background-color: hsl(183, 100%, 15%);
     background-color: hsl(186, 14%, 43%);
     background-color: hsl(184, 14%, 56%);
     background-color: hsl(185, 41%, 84%);
     background-color: hsl(189, 41%, 97%);
-    background-color: hsl(0, 0%, 100%); */
-}
+    background-color: hsl(0, 0%, 100%);
+} */
 
 .attribution {
     font-size: 11px;
