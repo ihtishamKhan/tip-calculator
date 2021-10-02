@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* custom css */
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+.app-title {
+    padding: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.bill-container {
+    border-radius: 25px 25px 0 0;
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.input-group {
+    width: 100%;
+}
+
+label,
+input {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-size: 18px;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: hsl(185, 41%, 84%);
+    height: 40px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 800;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 14px;
+}
+
+.tip-button-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tip-button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 14px;
+    flex-basis: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    /* margin-right: 10px; */
+}
+
+.input-group {
+    margin-bottom: 14px;
+}
+
+.result-card {
+    background-color: hsl(183, 100%, 15%);
+    width: 100%;
+    padding: 16px;
+    color: white;
+    border-radius: 8px;
+}
+
+.reset-button {
+    background-color: rgb(1, 202, 202);
+    font-size: 18px;
+    padding: 14px;
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+
+
+/* test colors */
+
+.reset-button {
+    /* background-color: hsl(183, 100%, 15%);
+    background-color: hsl(186, 14%, 43%);
+    background-color: hsl(184, 14%, 56%);
+    background-color: hsl(185, 41%, 84%);
+    background-color: hsl(189, 41%, 97%);
+    background-color: hsl(0, 0%, 100%); */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
